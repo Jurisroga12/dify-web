@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Sarunbots</title>
 <style>
-#selectedSystem{
+#izvele{
     position: sticky;
     top: 0;
 }
 </style>
 </head>
 <body>
-<button onclick="setSystem('Lietu bibliotēka')">Lietu bibliotēka</button>
-<button onclick="setSystem('Aplikācija makšķerniekiem')">Aplikācija makšķerniekiem</button>
-<button onclick="setSystem('Sociālais tīkls senioriem')">Sociālais tīkls senioriem</button>
-<button onclick="setSystem('Tiešās pirkšanas pulciņš')">Tiešās pirkšanas pulciņš</button>
-<div id="selectedSystem">Izvēlētā sistēma: Nav izvēlēta</div>
+<button onclick="izveleties('Lietu bibliotēka')">Lietu bibliotēka</button>
+<button onclick="izveleties('Aplikācija makšķerniekiem')">Aplikācija makšķerniekiem</button>
+<button onclick="izveleties('Sociālais tīkls senioriem')">Sociālais tīkls senioriem</button>
+<button onclick="izveleties('Tiešās pirkšanas pulciņš')">Tiešās pirkšanas pulciņš</button>
+<div id="izvele">Izvēlētā sistēma: Nav izvēlēta</div>
 <div class="chat-container">
 <iframe
  src="https://udify.app/chatbot/qidj5gJOj0YGN7i0"
@@ -26,7 +26,7 @@
 </iframe>
 </div>
 <script>
-function setSystem(name){
+function izveleties(name){
     document.getElementById("selectedSystem").innerText = "Izvēlētā sistēma: " + name;
 }
 </script>
